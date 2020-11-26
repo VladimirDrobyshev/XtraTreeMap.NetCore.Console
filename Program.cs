@@ -50,7 +50,7 @@ namespace XtraTreeMapNetCoreConsole {
         static string GetLabel(Random rnd) {
             StringBuilder builder = new StringBuilder();
             for (int i = 0; i < LabelLength; i++)
-                builder.Append(rnd.Next('z' - 'A') + 'A');
+                builder.Append((char)(rnd.Next('z' - 'A') + 'A'));
             return builder.ToString();
         }
     }
